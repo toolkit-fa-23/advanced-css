@@ -33,6 +33,7 @@
 <style>
   
 .parent-container{
+  position: relative;
   width: 60vw;
   height: 200vh;
   background-color: lightgrey;
@@ -56,21 +57,24 @@
   left: 20px;
 }
 .div-3{
-    background-color: green;
-    position: sticky;
-    top: 50px;
-    right: 50px;
-  }
-.div-4{
     background-color: red;
     position: absolute;
     left: 400px;
-    bottom: 50px;
+    bottom: 40px;
   }
-.div-5{
+.div-4{
   background-color: orange;
   position: fixed;
+  right: 50px;
+  bottom: 50px;
 }
+.div-5{
+    background-color: green;
+    position: sticky;
+    margin-left: auto;
+    top: 50px;
+    margin-right: 50px;
+  }
   
 </style>
 
