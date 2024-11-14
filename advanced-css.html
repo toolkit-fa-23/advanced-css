@@ -23,7 +23,7 @@
       <span>This div is fixed position</span>
     </div>
     
-    <div class="div-5">
+    <div class="div-5 hidden">
       <span>This div is sticky positioned</span>
     </div>
 
@@ -76,11 +76,25 @@
     margin-right: 50px;
   }
 
+  .hidden {
+    display: block;
+  }
+
   @media (max-width: 450px){
 
     .parent-container{
       width: 90vw;
     }
+
+    .div-1, .div-2, .div-3, .div-4, .div-5{
+      width: 80px;
+      height: 80px;
+    }
+
+    .hidden{
+      display: none;
+    }
+    
 
     
   }
